@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takrawista Life_Jan Nino Baoc</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/241e1e68fb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navagation -->
+    <header>
+        <a href="#" class="logo">Takrawista<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu ();"></div>
+        <ul class="navigation">
+            <a href="index.html #home" onclick="toggleMenu ();"><i class="fas fa-home"> </i>&emsp13;Home</a>
+            <a href="index.html #about" onclick="toggleMenu ();"><i class="fas fa-eject"></i>&emsp13;About</a>
+            <a href="index.html #journey" onclick="toggleMenu ();"><i class="fas fa-running"></i>&emsp13;Journey</a>
+            <a href="index.html #idols" onclick="toggleMenu ();"><i class="far fa-futbol"></i>&emsp13;Idols</a>
+            <a href="index.html #testimonies" onclick="toggleMenu ();"><i class="fas fa-male"></i>&emsp13;Testimonies</a>
+            <a href="index.html #contact" onclick="toggleMenu ();"><i class="far fa-address-book"></i>&emsp13;Contact</a>
+        </ul>
+    </header>
+    <!-- About -->
+    <section class="aboutidols" id="aboutidols">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>R</span>hey Jhey Ortouste</h2>
+                <p>
+                    <span>Name:</span> Rhey Jhey Ortouste <br>
+                    <span>Nickname:</span> Saw Saw "The Genius Striker" <br>
+                    <span>Country:</span> Philippines <br>
+                    <span>Height: </span> 5'7 <br>
+                    <span>Position:</span> Killer / Striker <br>
+                    <span>School: </span> EARIST Manila <br>
+                    <span>Hometown:</span> Cebu City <br>
+                    <span>Present Adress:</span> Marikina City 
+                </p>
+                <p class="p2">No.1 Striker nang Pilipinas Sepak Takraw, One of the Best and Killer Striker in ASIA. A soldier
+                    athlete of the Philippine Airforce.
+                </p>
+                <h1 style="color: rgb(204, 10, 33); font-size: 15px;">"HEROES COME AND GO BUT LEGENDS ARE FOREVER"</h1>
+            </div>
+            <div class="col50">
+                <h1 class="titleText"><span>S</span>ee Highlights</h1>
+                <div class="videoBx">
+                    <video src="vid/Sepak Takraw ● Rheyjhey Ortouste ● Sublime Spikes 2016 _ HD.mp4" controls
+                        autoplay></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <a href="#" class="logo">Takrawista<span>.</span></a>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linked-in"></i></a>
+                </div>
+                <p class="right-text">&copy;2021 Created by Takrawista All rights reserved</p>
+            </div>
+            <div class="right-col">
+                <h1>Sepak Takraw Never Stop</h1> <br>
+                <div class="border"></div> <br>
+                <p>Enter your email to watch different sepak takraw highlights</p> <br>
+                <form action="" class="newsletter-form">
+                    <input type="email" name="" class="txtb" placeholder="Enter your Email">
+                    <input type="submit" class="btn" value="Submit" name="">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+    </script>
+</body>
+
+</html>

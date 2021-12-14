@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takrawista Life_Jan Nino Baoc</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/241e1e68fb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navagation -->
+    <header>
+        <a href="#" class="logo">Takrawista<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu ();"></div>
+        <ul class="navigation">
+            <a href="index.html #home" onclick="toggleMenu ();"><i class="fas fa-home"> &emsp13;</i>Home</a>
+            <a href="index.html #about" onclick="toggleMenu ();"><i class="fas fa-eject"></i>&emsp13;About</a>
+            <a href="index.html #journey" onclick="toggleMenu ();"><i class="fas fa-running"></i>&emsp13;Journey</a>
+            <a href="index.html #idols" onclick="toggleMenu ();"><i class="far fa-futbol"></i>&emsp13;Idols</a>
+            <a href="index.html #testimonies" onclick="toggleMenu ();"><i class="fas fa-male"></i>&emsp13;Testimonies</a>
+            <a href="index.html #contact" onclick="toggleMenu ();"><i class="far fa-address-book"></i>&emsp13;Contact</a>
+        </ul>
+    </header>
+    <!-- Journey gallery -->
+    <section class="gallery">
+    <input type="radio" name="Photos" id="check1" checked>
+    <input type="radio" name="Photos" id="check2">
+    <input type="radio" name="Photos" id="check3">
+    <input type="radio" name="Photos" id="check4">
+
+    <div class="container">
+        <h1>My Journey Photo Gallery</h1>
+        <div class="top-content">
+        <h3>Photo Gallery</h3>
+        <label for="check1">All</label>
+        <label for="check2">Me</label>
+        <label for="check3">Competition</label>
+        <label for="check4">Training</label>
+    </div>
+    
+
+    <div class="photo-gallery">
+        <div class="pic me">
+            <img src="img/me1.jpg.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/_com1.jpg">
+        </div>
+        <div class="pic training">
+            <img src="img/train1.jpg.jpeg">
+        </div>
+        <div class="pic me">
+            <img src="img/me2.jpg.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/_com2.jpg">
+        </div>
+        <div class="pic training">
+            <img src="img/train2.jpg.jpeg">
+        </div>
+        <div class="pic me">
+            <img src="img/me3.jpg.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/_com3.jpg">
+        </div>
+        <div class="pic training">
+            <img src="img/train3.jpg.jpeg">
+        </div>
+        <div class="pic me">
+            <img src="img/me4.jpg.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/_com4.jpg">
+        </div>
+        <div class="pic training">
+            <img src="img/train4.jpg.jpeg">
+        </div>
+        <div class="pic me">
+            <img src="img/me5.jpg.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/_com5.jpg">
+        </div>
+        <div class="pic training">
+            <img src="img/train5.jpg.jpeg">
+        </div>
+        <div class="pic me">
+            <img src="img/me6.jpg.jpg">
+        </div>
+        <div class="pic me">
+            <img src="img/me7.jpg">
+        </div>
+        <div class="pic me">
+            <img src="img/me8.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/G-10_1.jpg">
+        </div>
+        <div class="pic training">
+            <img src="img/train6.jpg.jpeg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/_com7.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/_com8.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/_com9.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/com10.jpg.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/com11.jpg.jpeg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/com12.jpg.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/com13.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/com14.jpg">
+        </div>
+        <div class="pic compitation">
+            <img src="img/com15.jpeg">
+        </div>
+        
+    </div>
+    </div>
+</section>
+   <!-- Footer -->
+   <footer>
+    <div class="footer-container">
+        <div class="left-col">
+            <a href="#" class="logo">Takrawista<span>.</span></a>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linked-in"></i></a>
+            </div>
+            <p class="right-text">&copy;2021 Created by Takrawista All rights reserved</p>
+        </div>
+        <div class="right-col">
+            <h1>Sepak Takraw Never Stop</h1> <br>
+            <div class="border"></div> <br>
+            <p>Enter your email to watch different sepak takraw highlights</p> <br>
+            <form action="" class="newsletter-form">
+            <input type="email" name="" class="txtb" placeholder="Enter your Email">
+            <input type="submit"class="btn" value="Submit" name="">
+            </form>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+
+    function toggleMenu() {
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+</script>
+</body>
+
+</html>
